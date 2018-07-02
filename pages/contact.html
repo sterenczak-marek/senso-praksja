@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'img/background/2.jpg' %});">
+        <div class="auto-container">
+            <h1>Kontakt</h1>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!--Contact Section-->
+    <section class="contact-section">
+        <div class="auto-container">
+
+            <!--Map Section-->
+            <section class="map-section">
+                <!--Map Outer-->
+                <div class="map-outer">
+                    <!--Map Canvas-->
+                    <div class="map-canvas"
+                         data-zoom="8"
+                         data-lat="-37.817085"
+                         data-lng="144.955631"
+                         data-type="roadmap"
+                         data-hue="#ffc400"
+                         data-title="Envato"
+                         data-icon-path="images/icons/map-marker.png"
+                         data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                    </div>
+                </div>
+            </section>
+            <!--End Map Section-->
+
+            <div class="row clearfix">
+                <!--Info Column-->
+                <div class="info-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <h2>Keep in touch</h2>
+                        <div class="text">These days are all share them with me oh baby said inspect Cali to forny till the one and they knew are all share them with me oh baby said one and they knew it was much more than a hunch.</div>
+                        <ul class="list-style-two">
+                            <li><span class="icon fa fa-home"></span>kindergarten, Orlando, United States.</li>
+                            <li><span class="icon fa fa-phone"></span>(+1) 234 5678 900</li>
+                            <li><span class="icon fa fa-envelope-o"></span>infokids@support.com</li>
+                            <li><span class="icon fa fa-globe"></span>www.kindergarten.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Form Column-->
+                <div class="form-column col-md-6 col-sm-12 col-xs-12">
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <!--Contact Form-->
+                        <form method="post" action="sendemail.php" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="username" placeholder="Imię" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Adres e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Wiadomość"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="theme-btn btn-style-one" type="submit" name="submit-form">Wyślij</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!--End Contact Form -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--End Contact Section-->
+
+    <!--Call To Action Two-->
+    <section class="call-to-action-two style-two alternate" style="background-image:url(images/background/5.jpg);">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Title Column-->
+                <div class="title-column col-md-8 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <div class="icon-box">
+                            <span class="icon"><img src="images/resource/hand-icon.png" alt="" /></span>
+                        </div>
+                        <h2>Enroll your Child to a Class</h2>
+                        <div class="text">We will provide the perfect education for your child every day</div>
+                    </div>
+                </div>
+                <!--Btn Column-->
+                <div class="btn-column col-md-4 col-sm-12 col-xs-12">
+                    <a href="#" class="theme-btn btn-style-three">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action Two-->
+
+{% endblock %}
